@@ -2,13 +2,21 @@ public class MyMain {
 
     // Reverses an array
     public static int[] reverse(int[] arr) {
-        // REPLACE WITH YOUR CODE HERE
+        for (int i = arr.length; i < arr.length; i--) {
+            System.out.println(i);
+        }
         return null;
     }
 
     // Finds the second largest number in an array
     public static int secondLargest(int[] arr) {
-        // REPLACE WITH YOUR CODE HERE
+        int before = -5000000;
+        int walrus1 = 0;
+        int walrus2 = 0;
+        for (int i = 0; i < arr.length; i++) {
+            walrus1 = arr[i];
+            before = walrus1;
+        }
         return -1;
     }
 
@@ -28,6 +36,7 @@ public class MyMain {
 
 
     public static void main(String[] args) {
-        // YOUR CODE HERE
+        int[] s = reverse(new int[] {1, 2, 4, 5});
+        System.out.println(reverse(s));
     }
 }
